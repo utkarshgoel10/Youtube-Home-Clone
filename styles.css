@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/* .tooltip {
+	background-color: #ffaffc;
+	border-radius: 10px;
+	padding: 10px 15px;
+	position: relative;
+	margin: 15px;
+	text-align: center;
+}
+
+.tooltip::after {
+	background-color: #333;
+	border-radius: 10px;
+	color: #fff;
+	display: none;
+	padding: 10px 15px;
+	position: absolute;
+	text-align: center;
+	z-index: 999;
+}
+
+.tooltip::before {
+	background-color: #333;
+	content: ' ';
+	display: none;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	z-index: 999;
+}
+
+.tooltip:hover::after {
+	display: block;
+}
+
+.tooltip:hover::before {
+	display: block;
+}
+
+.tooltip.top::after {
+	content: 'top';
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, calc(-100% - 10px));
+}
+
+.tooltip.top::before {
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+} */
+.menu-icons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-channel-icon {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #AAA;
+} 
+.categories {
+  padding: 1rem 2rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.category-section {
+  display: flex;
+  overflow: hidden;
+  margin-top: 0.4rem;
+}
+
+.category {
+  margin-right: 1rem;
+  word-wrap: none;
+  white-space: nowrap;
+  border: 1px solid #CCC;
+  border-radius: 900px;
+  background-color: #E7E7E7;
+  padding: .5rem 1rem;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+.category:hover {
+  background-color: #DDD;
+}
+
+.category.active {
+  background-color: #606060;
+  color: white;
+  border-color: #EEE;
+}
+
+.category:last-child {
+  margin-right: 0;
+}
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  /* min-width: 250px;
+  min-height: 150px; */
+    min-width: 240px;
+  min-height: 200px;
+  background-color: #AAA;
+}
+.thumbnail {
+  position: relative;
+  display: flex;
+}
+
+.thumbnail::before {
+  content: attr(data-duration);
+  position: absolute;
+  background-color: rgba(0, 0, 0, .85);
+  color: white;
+  right: 5px;
+  bottom: 5px;
+  padding: .1em .3em;
+  border-radius: .3em;
+  font-size: .9rem;
+}
+.channel-icon {
+  margin-right: .75rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #AAA;
+}
+/* .video-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+  border-top: 4px solid #CCC;
+}
+
+.video-section:first-child {
+  border-top: none;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.video-bottom-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.video-channel-name {
+  margin-bottom: .1rem;
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.video-channel-name:hover {
+  color: #111;
+}
+
+.video-channel-name,*/
+
+
+.video-metadata {
+  color: #555;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.video-section-title {
+  grid-column: 1 / -1;
+  margin: -.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .5rem;
+}
+
+.video-section-title-close {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+} 
+@media screen and (max-width: 400px){
+  .menu-channel-icon{
+    position: relative;
+    right: 0.8rem;
+  }
+  /* .menu-icons{
+    position: relative;
+    right: 0.8rem;
+  } */
+}
+@media screen and (max-width: 361px){
+  .menu-icons{
+    position: relative;
+    right: 1.4rem;
+    transform: scale(0.9);
+  }
+  .plus{
+    position: relative;
+    left: 0.6rem;
+  }
+}
+@media screen and (max-width: 321px){
+  /* .menu-icons{
+    transform: scale(0.8);
+  }
+  .menu-icons{
+    position: relative;
+    right: 2rem;
+  } */
+  .plus,.bell,.apps{
+    visibility: hidden;
+  }
+  .menu-channel-icon{
+    position: relative;
+    right: 5rem;
+  }
+}
+@media screen and (max-width: 301px){
+.plus,.bell,.apps{
+  visibility: hidden;
+}
+.menu-channel-icon{
+  position: relative;
+  right: 5rem;
+}
+}

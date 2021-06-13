@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="YouTube_23392.png" type="image/png">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="left-icons">
+                <li id="navbtn">
+                    <i class="fas fa-bars"></i>
+                    
+                </li>
+
+                <li id="logo">
+                    <!-- <i class="fab fa-youtube"></i>
+                    <span>Youtube</span> -->
+                    <img src="yt_logo_rgb_light.png" alt="" style="height: 1.4rem; margin-left: -0.5rem;cursor: pointer">
+                </li>
+            </ul>
+
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <span class="searchbtn">
+                    <i class="fas fa-search"></i>
+                </span><i class="fas fa-microphone" style="padding: 0.4rem 1.2rem; font-size: 1.2rem; cursor: pointer"></i>
+            </div>
+
+
+            <div class="menu-icons">
+                <a href="#">
+                  <img src="video-plus.svg" alt="Upload Video" class="plus"/>
+                </a>
+                <a href="#">
+                  <img src="apps.svg" alt="Apps" class="apps"/>
+                </a>
+                <a href="#">
+                  <img src="bell.svg" alt="Notifications" class="bell"/>
+                </a>
+                <a href="#">
+                  <img class="menu-channel-icon" src="https://yt3.ggpht.com/yti/ANoDKi4f-VhNRmWm4WA2FEwQuU2ZocEkisJVzZ9zNZE7NQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="Your Channel" />
+                </a>
+              </div>
+        </nav>
+    </header>
+
+
+
+
+    <section class="hero">
+        <div class="sidebar">
+            <ul class="left-icons">
+                <li id="navbtn_mobile">
+                    <i class="fas fa-bars"></i>
+                </li>
+
+                <li id="logo">
+                    <!-- <i class="fab fa-youtube"></i>
+                    <span>Youtube</span> -->
+                    <img src="yt_logo_rgb_light.png" alt="" style="height: 1.4rem; margin-left: -0.5rem; cursor: pointer">
+                </li>
+            </ul>
+
+            <ul id="sidebar-content">
+                <li class="active trigger">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </li>
+
+                <li class="trigger for-hover">
+                    <i class="fas fa-compass"></i>
+                    <span>Explore</span>
+                </li>
+
+                <li class="sub trigger for-hover">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M18.7 8.7H5.3V7h13.4v1.7zm-1.7-5H7v1.6h10V3.7zm3.3 8.3v6.7c0 1-.7 1.6-1.6 1.6H5.3c-1 0-1.6-.7-1.6-1.6V12c0-1 .7-1.7 1.6-1.7h13.4c1 0 1.6.8 1.6 1.7zm-5 3.3l-5-2.7V18l5-2.7z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <span>
+                        Subscriptions
+                    </span>
+                </li>
+
+                <li class="trigger for-hover">
+                    <svg viewBox="0 0 27 27" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon"
+                        style="color: #555;pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path fill="none" d="M0 0h24v24H0z" class="style-scope yt-icon"></path>
+                            <path
+                                d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <span>Library</span>
+                </li>
+
+
+                <li class="for-hover">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </li>
+
+
+                <li class="for-hover">
+                    <svg viewBox="0 0 27 27" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon"
+                        style="color: #555; pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M18.4 5.6v12.8H5.6V5.6h12.8zm0-1.8H5.6a1.8 1.8 0 0 0-1.8 1.8v12.8a1.8 1.8 0 0 0 1.8 1.9h12.8a1.8 1.8 0 0 0 1.9-1.9V5.6a1.8 1.8 0 0 0-1.9-1.8z"
+                                class="style-scope yt-icon"></path>
+                            <path d="M10.2 9v6.5l5-3.2-5-3.2z" class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <span>Your Videos</span>
+                </li>
+
+                <li class="for-hover">
+                    <i class="fas fa-clock"></i>
+                    <span>Watch Later</span>
+                </li>
+            </ul>
+            <hr>
+            <h4 class="side-header">Subscriptions</h4>
+
+            <ul class="subscriptions">
+                <li  class="for-hover">
+                    <!-- <i class="fas fa-thumbs-up"></i> -->
+                    <a href="#">
+                        <img class="channel-icon" src="https://pbs.twimg.com/profile_images/1310937560517169154/OLzku1DJ_400x400.jpg" style="width: 32px; height: 32px"/>
+                      </a>
+                    <span class="subs-txt" style="margin-left: -0.9rem;">Clever Programmer</span>
+                </li>
+                <li  class="for-hover">
+                    <!-- <i class="fas fa-thumbs-up"></i> -->
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngJZm17vNotc0ojgs5rPQ7MC0eI7a2WsOtjw4SzLA=s176-c-k-c0x00ffffff-no-rj" style="width: 32px; height: 32px"/>
+                      </a>
+                    <span class="subs-txt" style="margin-left: -0.9rem;">Tech Burner</span>
+                </li>
+                <li  class="for-hover">
+                    <!-- <i class="fas fa-thumbs-up"></i> -->
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnjXndA1IozeIYHvyWML5BLjhrXBkqvtnSXjwOwOyQ=s176-c-k-c0x00ffffff-no-rj" style="width: 32px; height: 32px"/>
+                      </a>
+                    <span class="subs-txt" style="margin-left: -0.9rem;">Kalle Hallden</span>
+                </li>
+                <li  class="for-hover">
+                    <!-- <i class="fas fa-thumbs-up"></i> -->
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwni_LdnpDi-SOIhjp4Kxo2l_yVBoYsfdDCpUM5VDzg=s176-c-k-c0x00ffffff-no-rj" style="width: 32px; height: 32px"/>
+                      </a>
+                    <span class="subs-txt" style="margin-left: -0.9rem;">Netflix</span>
+                </li>
+                <li  class="for-hover">
+                    <!-- <i class="fas fa-thumbs-up"></i> -->
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngoNwxFjpzZ-Ln7mILZV9Pzwql84y8TZU_dRziyhQ=s176-c-k-c0x00ffffff-no-rj" style="width: 32px; height: 32px"/>
+                      </a>
+                    <span class="subs-txt" style="margin-left: -0.9rem;">Unisport</span>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h4 class="side-header">More from Youtube</h4>
+
+            <ul class="more">
+                <li class="for-hover">
+                    <i class="fab fa-youtube"></i>
+                    <span>Premium</span>
+                </li>
+                <li class="for-hover">
+                    <i class="fas fa-film-alt"></i>
+                    <span>Movies</span>
+                </li>
+                <li class="for-hover">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Gaming</span>
+                </li>
+                <li class="for-hover">
+                    <i class="far fa-signal-stream"></i>
+                    <span>Live</span>
+                </li>
+                <li class="for-hover">
+                    <i class="fas fa-lightbulb"></i>                 
+                    <span>Learning</span>
+                </li>
+                <li class="for-hover">
+                    <i class="fad fa-trophy"></i>                    
+                    <span>Sports</span>
+                </li>
+
+
+            </ul>
+
+            <hr>
+
+            <ul class="more">
+                <li  class="for-hover">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </li>
+                <li  class="for-hover">
+                    <i class="fas fa-flag"></i>
+                    <span>Report History</span>
+                </li>
+                <li  class="for-hover">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help</span>
+                </li>
+                <li  class="for-hover">
+                    <i class="fas fa-comment-alt"></i>
+                    <span>Send feedback</span>
+                </li>
+            </ul>
+
+            <div class="sub-footer">
+                <span>About</span>
+                <span>Copyright</span>
+                <span>Contact Us</span>
+                <span>Creators</span>
+                <span>Advertise</span>
+                <span>Developers</span>
+            </div>
+
+
+            <div class="footer">
+                &copy; 2020 Google LLC
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="categories">
+                <section class="category-section">
+                  <button class="category active">All</button>
+                  <button class="category">Live</button>
+                  <button class="category">Music</button>
+                  <button class="category">Coding</button>
+                  <button class="category">Podcasts</button>
+                  <button class="category">Calisthenics</button>
+                  <button class="category">Motivation</button>
+                  <button class="category">Anime</button>
+                  <button class="category">Movies</button>
+                  <button class="category">Cryptography</button>
+                </section>
+              </div>
+
+             
+            <div class="row">
+                
+                 <div class="item">
+                    <!-- <div class="thumb"></div> -->
+                    <a href="#" class="thumbnail" data-duration="12:54">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/bARCE45FM4s/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <!-- <div class="profile-pic"></div> -->
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnjXndA1IozeIYHvyWML5BLjhrXBkqvtnSXjwOwOyQ=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">I Coded A Trading Bot And Gave It $1000 To Trade!
+
+                            </div>
+                            <div class="channel">Kalle Hallden
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                            </div>
+                            <div class="video-metadata">
+                                <span>2.7M views</span>
+                                •
+                                <span>3 weeks ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="11:04">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/NZ_7A9nh7V0/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngSig51amMG37CWyP-J4PY5_ciDmFIcYRq9zKQzvg=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">I figured out the Instagram Algorithm
+
+                            </div>
+                            <div class="channel">Jack Gordon</div>
+                            <div class="video-metadata">
+                                <span>172K views</span>
+                                •
+                                <span>4 days ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="6:28">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/rv8f-BxRq0g/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                            <img class="channel-icon" src="https://pbs.twimg.com/profile_images/1310937560517169154/OLzku1DJ_400x400.jpg" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">How i learned React Native in 1 day (my experience)
+
+                            </div>
+                            <div class="channel">Clever Programmer
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                            </div>
+                            <div class="video-metadata">
+                                <span>51K views</span>
+                                •
+                                <span>1 month ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- <div class="thumb">
+                        <img src="naruto.jpg" alt="">
+                    </div> -->
+                    <a href="#" class="thumbnail" data-duration="9:24">
+                        <img class="thumbnail-image" src="naruto.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwni_LdnpDi-SOIhjp4Kxo2l_yVBoYsfdDCpUM5VDzg=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">Top 5 Naruto Shippuden Fights | Netflix
+                            </div>
+                            <div class="channel">Netflix India
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+      
+                            </div>
+                            <div class="video-metadata">
+                                <span>755K views</span>
+                                •
+                                <span>1 year ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="11:24">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/vNaFGCpXVtQ/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                                <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngjuC0FZX6cVNtDuqZ1Bx-UOawM7kaPKikOy8gOBa4=s176-c-k-c0x00ffffff-no-rj-mo" />
+                              </a>
+                        <div class="video-details">
+                            <div class="title">The Ultimate hybrid PC/Mac desk setup!
+    
+                            </div>
+                            <div class="channel">Jesse Chen</div>
+                            <div class="video-metadata">
+                                <span>172K views</span>
+                                •
+                                <span>1 day ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="7:39">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/lVzzsHeU_gE/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                                <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngJZm17vNotc0ojgs5rPQ7MC0eI7a2WsOtjw4SzLA=s176-c-k-c0x00ffffff-no-rj-mo" />
+                              </a>
+                        <div class="video-details">
+                            <div class="title">7 Crazy Smartphone Fails that We'll Never Forget !
+    
+                            </div>
+                            <div class="channel">Tech Burner
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                            </div>
+                            <div class="video-metadata">
+                                <span>1.2M views</span>
+                                •
+                                <span>6 days ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="22:02">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/fyy2Mr84vNM/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                                <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwniWFbtX2drltDWOBZGP1KhLVTqDypqg4oQPK7Pc=s176-c-k-c0x00ffffff-no-rj-mo" />
+                              </a>
+                        <div class="video-details">
+                            <div class="title">Google Summer of Code : Step by step guide by GSOCER
+    
+                            </div>
+                            <div class="channel">Apna College</div>
+                            <div class="video-metadata">
+                                <span>12K views</span>
+                                •
+                                <span>1 week ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="47:10">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/KJnMF96K5pI/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                                <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnjRCxDB8NdSOFw9jRrEr5dFeAxREYu8R7OownHd7w=s176-c-k-c0x00ffffff-no-rj-mo" />
+                              </a>
+                        <div class="video-details">
+                            <div class="title">SIDEMEN PLAY AMONG US IN REAL LIFE
+                            </div>
+                            <div class="channel">Sidemen
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                            </div>
+                            <div class="video-metadata">
+                                <span>3.8M views</span>
+                                •
+                                <span>2 months ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border:none; border-top:2px #CCCCCC solid; height: 1px;">
+            <br>
+            <h2 class="video-section-title">
+                COVID-19 
+                <!-- <button class="video-section-title-close">&times;</button> -->                
+              </h2><br>
+              <p class="video-section-title" style="color: rgb(117, 117, 117);">Get the right information on COVID-19 prevention.</p>
+             <br>
+            <div class="row">
+
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="1:53">
+                        <img class="thumbnail-image" src="https://d1e00ek4ebabms.cloudfront.net/production/0eb98616-b4a2-4284-9e1a-826ed9c986ce.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngY0fWsYbphp15Gu3JPOmujdPPT0gldb3lkW8R_mA=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">Johnson & Johnson's COVID-19 vaccine faces setbacks
+
+                            </div>
+                            <div class="channel">CBS Evening News
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                            </div>
+                            <div class="video-metadata">
+                                <span>91K views</span>
+                                •
+                                <span>20 hours ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="item">
+                    <a href="#" class="thumbnail" data-duration="1:20">
+                        <img class="thumbnail-image" src="https://www.sciencenewsforstudents.org/wp-content/uploads/2020/03/1030_epidemictips-1028x579.png" />
+                      </a>
+                    <div class="details">
+                        <!-- <div class="profile-pic"></div> -->
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngm8AY2NCyMoKUrl_OQBdABJC0FHxil1NSHnwvX=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">STAY SAFE | COVID-19 Prevention Tips
+
+                            </div>
+                            <div class="channel">Samaritan Health Services</div>
+                            <div class="video-metadata">
+                                <span>30K views</span>
+                                •
+                                <span>1 year ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="2:58">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/8z9BsKpCJY0/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnhPR3iBRZdoXPT8Ne0MIfhG4k1eQcN11UT0GVXV=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">What is the coronavirus? Advice for Kids
+
+                            </div>
+                            <div class="channel">Smile and Learn
+                                <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                            </div>
+                            <div class="video-metadata">
+                                <span>201K views</span>
+                                •
+                                <span>11 months ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="#" class="thumbnail" data-duration="2:20">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/-Fdo_HT3X80/maxresdefault.jpg" />
+                      </a>
+                    <div class="details">
+                        <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnj6iJ36dklnFWmha88BvmmJwMDHSwEtkpds-YUGXw=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                        <div class="video-details">
+                            <div class="title">Prevention | COVID-19 Everyday Precautions
+
+                            </div>
+                            <div class="channel"> Pulmonary Fibrosis Foundation</div>
+                            <div class="video-metadata">
+                                <span>1M views</span>
+                                •
+                                <span>7 months ago</span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+
+               
+           </div> 
+           <hr style="border:none; border-top:2px #CCCCCC solid; height: 1px;">
+           <div class="row">
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="18:27">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/gWai7fYp9PY/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnhYs6E9SqtWTikVdaGFwXzNmXPTR6ko2gNkZi-fEw=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">Learn To Build An SVG Animation With CSS
+
+                        </div>
+                        <div class="channel">Dev Ed
+                            <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                        </div>
+                        <div class="video-metadata">
+                            <span>540K views</span>
+                            •
+                            <span>2 years ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="15:44">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/6DSrh02KxEs/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwniO3mU9XIxrAp_R9KrisN1hbcm3i5AytSLeXf4=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">BYN : We All Have That One Friend Feat. Ashish Chanchlani
+
+                        </div>
+                        <div class="channel">Be YouNick
+                            <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                        </div>
+                        <div class="video-metadata">
+                            <span>10M views</span>
+                            •
+                            <span>4 years ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="15:50">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/i-uhiswZ-VI/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwng_Js0arTyfnyCjHXpnvhQFB8AiaPQbDC2I86kA=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">My advice to 19 years old me - complete Coding Roadmap
+
+                        </div>
+                        <div class="channel">Anuj Bhaiya
+                            <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                        </div>
+                        <div class="video-metadata">
+                            <span>52K views</span>
+                            •
+                            <span>6 months ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="1:46">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/VD-1bnLbqyw/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwniTlfD4Hb2wUBT1rxzCYA3Z6m6ogjQvWdGD-v4m4A=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">Jujutsu Kaisen [ AMV ] - Play With Fire
+
+                        </div>
+                        <div class="channel">Asta AMVs</div>
+                        <div class="video-metadata">
+                            <span>1.4M views</span>
+                            •
+                            <span>1 month ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="12:02">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/7hv8uJNksFo/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnjlyHpT2UeHb6XYwGtEI8ZhAj0qZv9namBFYJyw=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">BIGGEST FITNESS COLLAB EVER | Arrived in Rishikesh
+
+                        </div>
+                        <div class="channel">Yash Anand
+                            <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                        </div>
+                        <div class="video-metadata">
+                            <span>2.8M views</span>
+                            •
+                            <span>2 months ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="32:24">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/yDOC4RYNBM4/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwnhpNjTTcnunYN6sA0COpo4a1XScMe9cTeP-45fPzw=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">Black Holes, Time Travel & Aliens | The Ranveer Show 88
+
+                        </div>
+                        <div class="channel">BeerBiceps
+                            <img src="https://lh3.googleusercontent.com/RmVetI8XvRRAPd1MrRKPzBukDteYp8C4RSbJOtNchoNxTEJIAwZtUZCg-teFDH8zZKw=h36" style="width:13px;height:13px " alt="">
+
+                        </div>
+                        <div class="video-metadata">
+                            <span>5.3M views</span>
+                            •
+                            <span>5 months ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#" class="thumbnail" data-duration="5:22">
+                    <img class="thumbnail-image" src="https://i.ytimg.com/vi/4iFALQ1ACdA/maxresdefault.jpg" />
+                  </a>
+                <div class="details">
+                    <a href="#">
+                        <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwniuiil3MsNvPltVwGbgyVArM0iMBtfTe00CcHNN=s176-c-k-c0x00ffffff-no-rj-mo" />
+                      </a>
+                    <div class="video-details">
+                        <div class="title">Complete DS Algo in 450 Questions
+
+                        </div>
+                        <div class="channel">Love Babbar</div>
+                        <div class="video-metadata">
+                            <span>386K views</span>
+                            •
+                            <span>10 months ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                                    <a href="#" class="thumbnail" data-duration="4:41">
+                        <img class="thumbnail-image" src="https://i.ytimg.com/vi/7bWdJX4dnew/maxresdefault.jpg" />
+                      </a>
+                <div class="details">
+                    <a href="#">
+                            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AAUvwngkwLpB2RmVzl9Fd-Yl4TM6YvtETRFBhzW72ceOMms=s176-c-k-c0x00ffffff-no-rj-mo" />
+                          </a>
+                    <div class="video-details">
+                        <div class="title">Video Editing Before and After: After Effects
+
+                        </div>
+                        <div class="channel">Roy Aden</div>
+                        <div class="video-metadata">
+                            <span>4M views</span>
+                            •
+                            <span>1 year ago</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+
+
+
+    </section>
+    
+
+    <script src="https://kit.fontawesome.com/03e233b384.js" crossorigin="anonymous"></script>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+</body>
+</html>
